@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1132px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.title {
+  margin-top: 73px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.title .firts {
+  color: #3858D6;
+}
+.title .second {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header__navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__collection {
+  display: flex;
+  color: #8B8E99;
+  gap: 27px;
+}
+.header__options {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 900px) {
+  .header__collection {
+    display: none;
+  }
+}
+.hero {
+  width: 100%;
+  height: 877px;
+  background: #0B0B0B;
+  background: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+}
+.hero__wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 50px;
+}
+.hero__content {
+  max-width: 443px;
+  width: 100%;
+}
+.hero__content h1 {
+  font-size: 60px;
+}
+.hero__content p {
+  color: #8B8E99;
+  margin: 47px 0;
+  line-height: 1.25;
+}
+.hero__search {
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 9px 9px 9px 19px;
+  background: #fff;
+}
+.hero__search input {
+  flex: 1;
+  height: 100%;
+  text-indent: 16px;
+  background: transparent;
+}
+.hero__search button {
+  width: 112px;
+  height: 100%;
+  border-radius: 9px;
+  background: #3858D6;
+  color: #fff;
+}
+.hero__image {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    padding: 70px 0;
+  }
+  .hero__wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero__content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .hero__content h1 {
+    font-size: 32px;
+  }
+}
+body {
+  min-height: 500vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: auto;
+  margin-top: 65px;
+}
+.wrapper .card {
+  width: calc((100% - 40px) / 3);
+}
+.wrapper .card .card_image {
+  background: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 41px 27px 43px;
+}
+.wrapper .card .card_body {
+  margin-top: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+.wrapper .card .card_body .card__price {
+  display: flex;
+  gap: 2px;
+}
+.wrapper .card .card_body .card__price .card__price_one {
+  color: #8B8E99;
+  text-decoration: line-through;
+}
+@media (max-width: 900px) {
+  .wrapper .card {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .wrapper .card {
+    width: 100%;
+  }
+}
+.wrapper .btn {
+  margin-top: 69px;
+  width: 100%;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 135px;
+}
+.wrapper .btn button {
+  width: 196px;
+  height: 46px;
+  border-radius: 15px;
+  background: #3858D6;
+  color: white;
+}
+
+.card1 {
+  background-color: #fff;
+  padding-block: 70px 120px;
+}
+.card1 .container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card1 .watch__card {
+  width: calc((100% - 40px) / 3);
+  background: rgb(246, 246, 246);
+  padding: 45px 25px 40px 40px;
+  border-radius: 22px;
+  display: flex;
+  gap: 26px;
+}
+@media (max-width: 900px) {
+  .card1 .watch__card {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .card1 .watch__card {
+    width: 100%;
+  }
+}
+.card1 .watch__card .image {
+  width: 30%;
+}
+.card1 .watch__card .image img {
+  width: 100%;
+}
+.card1 .watch__card .content {
+  width: 70%;
+  font-style: normal;
+}
+.card1 .watch__card .content .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(30, 29, 29);
+}
+.card1 .watch__card .content .description {
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(139, 142, 153);
+}/*# sourceMappingURL=main.min.css.map */
