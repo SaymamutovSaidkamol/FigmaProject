@@ -6,7 +6,7 @@
 @import "hero";
 
 body {
-    min-height: 500vh;
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -16,14 +16,6 @@ body {
     gap: 20px;
     overflow: auto;
     margin-top: 65px;
-    // &::-webkit-scrollbar{
-    //     height: 30px;
-    // }
-    // &::-webkit-scrollbar-thumb{
-    //     border-radius: 50px;
-    // }
-
-
 
     .card {
         width: calc((100% - 40px)/3);
@@ -34,6 +26,10 @@ body {
             align-items: center;
             justify-content: center;
             padding: 29px 41px 27px 43px;
+
+            img{
+                width: 100%;
+            }
         }
 
         .card_body {
@@ -138,5 +134,146 @@ body {
                 color: rgba(139, 142, 153, 1);
             }
         }
+    }
+}
+
+.card3__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    overflow: auto;
+    margin-top: 65px;
+
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc((100% - 20px)/2);
+        background: #F6F6F6;
+        border-radius: 22px;
+
+
+        .card__image{
+            padding: 30px 34px 30px 28px;
+        }
+
+        .card__body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .txt{
+                color: #8B8E99;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    
+    @media (max-width: 900px) {
+        .card {
+            width: 100%; /* Qo'shildi: har bir card 100% bo'lib tagma-tag bo'ladi */
+        }
+    }
+
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        align-items: center;
+        margin-top: 43px;
+
+        button {
+            width: 18px;
+            height: 18px;
+            background: #D9D9D9;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.card4__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    overflow: auto;
+    margin-top: 65px;
+    
+    .card{
+        width: 100%;
+        display: flex;
+        background: #F6F6F6;
+        border-radius: 22px;
+        margin-top: 135px;
+        align-items: center;
+
+        .card__body{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 97px;
+            gap: 12px;
+
+            h3{
+                font-size: 36px;
+            }
+
+            p{
+                font-size: 16px;
+                color: #8B8E99;
+            }
+        }
+
+        .card__image{
+            width: 30%;
+            padding: 33px 110px 43px 0px;
+            max-width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        .card {
+          flex-direction: column;
+          text-align: center;
+    
+          .card__image {
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+            order: -1; 
+          }
+    
+          .card__body {
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+          }
+        }
+      }
+}
+
+.footer{
+    max-width: 100%;
+    margin-top: 91px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0B0B0B;
+
+    h3{
+        color: white;
     }
 }
